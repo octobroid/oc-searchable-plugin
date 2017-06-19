@@ -1,0 +1,6 @@
+plugin:
+    name: 'octobro.searchable::lang.plugin.name'
+    description: 'octobro.searchable::lang.plugin.description'
+    author: Octobro
+    icon: oc-icon-search
+    homepage: ''
