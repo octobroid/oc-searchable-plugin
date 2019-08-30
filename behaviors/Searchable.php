@@ -34,6 +34,12 @@ class Searchable extends ExtensionBase
     public function __construct($model)
     {
         $this->model = $model;
+
+        $this->model->bindEvent('model.saveInternal', function () use ($model) {
+            if (isset($model->attributes['searchable'])) {
+                unset($model->attributes['searchable']);
+            }
+        });
     }
 
     /**
