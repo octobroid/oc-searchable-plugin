@@ -17,7 +17,7 @@ class Product extends Model
      *
      * @var array
      */
-    protected $searchable = [
+    public $searchable = [
         /**
          * Columns and their priority in search results.
          * Columns with higher values are more important.
